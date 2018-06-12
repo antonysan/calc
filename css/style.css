@@ -12,6 +12,13 @@
   font-size: 18px;
   border: 2px solid #e5e5e5;
 }
+
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .description {
   font-size: 12px;
 }
