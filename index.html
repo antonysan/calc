@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<div class="gfd">
-			<p>
-				<input class="qwe" id="text1" name="input" type="text" value="">
-			</p>
-			<p>
-				<input class="kjs" id="text2" name="input" type="text" value="">
-			</p>
-			<p class="summ"></p>
-			<button class="button" type="submit" name="input">ok!</button>
+	<div class="wrapper">
+		<p>
+			<span class="description">Введите стоимость продукта</span>
+			<input class="input qwe" id="text1" name="input" type="text" value="0" placeholder="100 рублей">
+		</p>
+		<p>
+			<span class="description">Введите единицу продукта</span>
+			<input class="input kjs" id="text2" name="input" type="text" value="0" placeholder="10 штук">
+		</p>
+		<p class="summ"></p>
+		<button class="button" type="submit" name="input">ok!</button>
 
 
 	</div>
 
 
-	<script>
-		var button = document.querySelector('.button');
-		var summary = document.querySelector('.summ');
-
-		button.addEventListener("click", function(evt) {
-
-			var input1 = document.querySelector('.qwe').value;
-			var input2 = document.querySelector('.kjs').value;
-			var value = input1 / input2;
-			console.log(value);
-			summary.innerHTML = value;
-		});
-
-
-
-
-
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
